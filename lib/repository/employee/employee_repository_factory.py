@@ -1,5 +1,6 @@
-from repository.employee.employee_repository_abstract import EmployeeRepository
-from repository.employee.employee_repository_in_memory import EmployeeRepositoryInMemory
+from lib.repository.employee.employee_repository_abstract import EmployeeRepository
+from lib.repository.employee.employee_repository_in_memory import EmployeeRepositoryInMemory
+
 
 class EmployeeRepositoryFactory:
     @staticmethod

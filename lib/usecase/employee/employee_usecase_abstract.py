@@ -1,13 +1,11 @@
 from abc import ABC, abstractmethod
-
 from lib.repository.employee.employee_repository_abstract import EmployeeRepository
 
 
-class EventUsecase(ABC):
+class EmployeeUsecase(ABC):
     def __init__(self, repository: EmployeeRepository):
-        self.employee_repository = repository
+        self.repository = repository
 
     @abstractmethod
-    def process(self, event, target_datetime):
+    def get_all(self):
         pass
-

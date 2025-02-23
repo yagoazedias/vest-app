@@ -1,12 +1,17 @@
 from abc import ABC, abstractmethod
 
-from domain.model.event import Event
+from lib.domain.model.employee import Employee
+
 
 class EmployeeRepository(ABC):
     @abstractmethod
-    def get_by_employee_id(self, employee_id: str):
+    def get_by_employee_id(self, employee_id: str) -> Employee:
         pass
 
     @abstractmethod
-    def save(self, event: Event):
+    def save(self, employee: Employee):
+        pass
+
+    @abstractmethod
+    def get_all(self):
         pass

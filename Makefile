@@ -20,4 +20,4 @@ install-virtual-env:
 	source .venv/bin/activate && pip3 install -r requirements.txt
 
 run:
-	python3 authorize.py < samplefile
+	python3 main.py example.csv 2020-04-01

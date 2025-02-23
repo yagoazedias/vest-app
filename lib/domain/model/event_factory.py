@@ -1,6 +1,7 @@
-from lib.constants.events import EVENT_DATE_FORMAT, EVENT_CANCEL_TYPE, EVENT_VEST_TYPE
-from domain.model.event import VestEvent, CancelEvent
 from datetime import datetime
+
+from lib.constants.events import EVENT_DATE_FORMAT, EVENT_CANCEL_TYPE, EVENT_VEST_TYPE
+from lib.domain.model.event import VestEvent, CancelEvent
 
 class EventFactory:
     @staticmethod
